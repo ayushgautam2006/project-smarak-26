@@ -1,6 +1,18 @@
 "use client";
 import React from "react";
 import Image from "next/image";
+import { Toaster } from "react-hot-toast";
+
+export default function RootLayout({ children }) {
+  return (
+    <html lang="en">
+      <body>
+        {children}
+        <Toaster position="bottom-center" />
+      </body>
+    </html>
+  );
+}
 
 const Footer = () => {
     return (
@@ -64,11 +76,46 @@ const Footer = () => {
                                 Contact Us
                             </h4>
                             <div className="font-serif text-base sm:text-lg lg:text-xl leading-relaxed text-gray-200 space-y-2">
-                                <p>Join our WhatsApp Channel</p>
-                                <p>smarakhnitrourkela@gmail.com</p>
-                                <p>+91 99383 80312</p>
-                                <p>+91 90788 10869</p>
-                            </div>
+  
+   <p>
+    <button
+      onClick={() => toast("Coming Soon")}
+      className="hover:text-[#F6A440] transition-colors underline"
+    >
+      Join our WhatsApp Channel
+    </button>
+  </p>
+
+  <p>
+    <a
+      href="mailto:smarakhnitrourkela@gmail.com"
+      className="hover:text-[#F6A440] transition-colors"
+    >
+      smarakhnitrourkela@gmail.com
+    </a>
+  </p>
+
+]
+  <p>
+    <a
+      href="tel:+919938380312"
+      className="hover:text-[#F6A440] transition-colors"
+    >
+      +91 99383 80312
+    </a>
+  </p>
+
+  <p>
+    <a
+      href="tel:+919078810869"
+      className="hover:text-[#F6A440] transition-colors"
+    >
+      +91 90788 10869
+    </a>
+  </p>
+
+</div>
+
                         </div>
                     </div>
                 </div>
