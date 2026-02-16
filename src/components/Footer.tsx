@@ -3,7 +3,7 @@
 import React from "react";
 import Image from "next/image";
 import toast from "react-hot-toast";
-import { footerCards } from "@/config/footerCards";
+import { footerCards } from "../config/contact";
 
 const Footer = () => {
   return (
