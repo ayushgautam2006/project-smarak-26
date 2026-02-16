@@ -116,7 +116,7 @@ export default function Navbar() {
                         ))}
                     </div>
 
-                    <div className="pt-2 px-2">
+                    <div className="pt-2 px-2 pb-5">
                         <button
                             className="block border-2 border-[#F5DEB3] text-[#F5DEB3] hover:bg-[#F5DEB3] hover:text-[#8B3333] px-6 py-2.5 rounded-full transition-all duration-200 font-normal text-center w-full"
                             onClick={() => handleRegister()}
