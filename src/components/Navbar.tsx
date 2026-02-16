@@ -13,7 +13,7 @@ export default function Navbar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     return (
-        <nav className="bg-[#8B3333]">
+        <nav className="bg-[#980204] sticky top-0 z-50">
             <div className="w-full px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between items-center h-14 sm:h-16">
                     {/* Logo */}
@@ -27,38 +27,37 @@ export default function Navbar() {
                         </Link>
                     </div>
 
-                    {/* Right side: Navigation Links and Sign In Button */}
                     <div className="flex items-center gap-4 lg:gap-6">
                         <div
                             className={`hidden lg:flex items-center space-x-6 xl:space-x-8 ${poppins.className}`}
                         >
                             <Link
                                 href="/about"
-                                className="text-[#F5DEB3] hover:text-white transition-colors font-normal text-sm xl:text-base whitespace-nowrap"
+                                className="text-[#FB9F2F] hover:text-white transition-colors font-normal text-sm xl:text-base whitespace-nowrap"
                             >
                                 About Us
                             </Link>
                             <Link
                                 href="/events"
-                                className="text-[#F5DEB3] hover:text-white transition-colors font-normal text-sm xl:text-base"
+                                className="text-[#FB9F2F] hover:text-white transition-colors font-normal text-sm xl:text-base"
                             >
                                 Events
                             </Link>
                             <Link
                                 href="/gallery"
-                                className="text-[#F5DEB3] hover:text-white transition-colors font-normal text-sm xl:text-base"
+                                className="text-[#FB9F2F] hover:text-white transition-colors font-normal text-sm xl:text-base"
                             >
                                 Gallery
                             </Link>
                             <Link
                                 href="/teams"
-                                className="text-[#F5DEB3] hover:text-white transition-colors font-normal text-sm xl:text-base"
+                                className="text-[#FB9F2F] hover:text-white transition-colors font-normal text-sm xl:text-base"
                             >
                                 Teams
                             </Link>
                             <Link
                                 href="/contact"
-                                className="text-[#F5DEB3] hover:text-white transition-colors font-normal text-sm xl:text-base whitespace-nowrap"
+                                className="text-[#FB9F2F] hover:text-white transition-colors font-normal text-sm xl:text-base whitespace-nowrap"
                             >
                                 Contact Us
                             </Link>
@@ -67,7 +66,7 @@ export default function Navbar() {
                         {/* <div className={`hidden lg:block ${poppins.className}`}>
                             <Link
                                 href="/signin"
-                                className="border-2 border-[#F5DEB3] text-[#F5DEB3] hover:bg-[#F5DEB3] hover:text-[#8B3333] px-5 xl:px-6 py-1.5 xl:py-2 rounded-full transition-all font-normal text-sm xl:text-base"
+                                className="border-2 border-[#FB9F2F] text-[#FB9F2F] hover:bg-[#FB9F2F] hover:text-[#8B3333] px-5 xl:px-6 py-1.5 xl:py-2 rounded-full transition-all font-normal text-sm xl:text-base"
                             >
                                 Sign in
                             </Link>
@@ -78,7 +77,7 @@ export default function Navbar() {
                             <button
                                 type="button"
                                 onClick={() => setIsMenuOpen(!isMenuOpen)}
-                                className="text-[#F5DEB3] hover:text-white focus:outline-none"
+                                className="text-[#FB9F2F] hover:text-white focus:outline-none"
                                 aria-label="Toggle menu"
                             >
                                 <svg
@@ -114,35 +113,35 @@ export default function Navbar() {
                     >
                         <Link
                             href="/about"
-                            className="block text-[#F5DEB3] hover:bg-[#A64848] transition-all duration-200 font-normal py-3 px-4 mx-2 rounded-lg"
+                            className="block text-[#FB9F2F] hover:bg-[#A64848] transition-all duration-200 font-normal py-3 px-4 mx-2 rounded-lg"
                             onClick={() => setIsMenuOpen(false)}
                         >
                             About Us
                         </Link>
                         <Link
                             href="/events"
-                            className="block text-[#F5DEB3] hover:bg-[#A64848] transition-all duration-200 font-normal py-3 px-4 mx-2 rounded-lg"
+                            className="block text-[#FB9F2F] hover:bg-[#A64848] transition-all duration-200 font-normal py-3 px-4 mx-2 rounded-lg"
                             onClick={() => setIsMenuOpen(false)}
                         >
                             Events
                         </Link>
                         <Link
                             href="/gallery"
-                            className="block text-[#F5DEB3] hover:bg-[#A64848] transition-all duration-200 font-normal py-3 px-4 mx-2 rounded-lg"
+                            className="block text-[#FB9F2F] hover:bg-[#A64848] transition-all duration-200 font-normal py-3 px-4 mx-2 rounded-lg"
                             onClick={() => setIsMenuOpen(false)}
                         >
                             Gallery
                         </Link>
                         <Link
                             href="/teams"
-                            className="block text-[#F5DEB3] hover:bg-[#A64848] transition-all duration-200 font-normal py-3 px-4 mx-2 rounded-lg"
+                            className="block text-[#FB9F2F] hover:bg-[#A64848] transition-all duration-200 font-normal py-3 px-4 mx-2 rounded-lg"
                             onClick={() => setIsMenuOpen(false)}
                         >
                             Teams
                         </Link>
                         <Link
                             href="/contact"
-                            className="block text-[#F5DEB3] hover:bg-[#A64848] transition-all duration-200 font-normal py-3 px-4 mx-2 rounded-lg"
+                            className="block text-[#FB9F2F] hover:bg-[#A64848] transition-all duration-200 font-normal py-3 px-4 mx-2 rounded-lg"
                             onClick={() => setIsMenuOpen(false)}
                         >
                             Contact Us
@@ -150,7 +149,7 @@ export default function Navbar() {
                         <div className="pt-2 px-2">
                             <Link
                                 href="/signin"
-                                className="block border-2 border-[#F5DEB3] text-[#F5DEB3] hover:bg-[#F5DEB3] hover:text-[#8B3333] px-6 py-2.5 rounded-full transition-all duration-200 font-normal text-center"
+                                className="block border-2 border-[#FB9F2F] text-[#FB9F2F] hover:bg-[#FB9F2F] hover:text-[#8B3333] px-6 py-2.5 rounded-full transition-all duration-200 font-normal text-center"
                                 onClick={() => setIsMenuOpen(false)}
                             >
                                 Sign in

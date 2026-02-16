@@ -45,7 +45,7 @@ const Footer = () => {
 
                         <div className="flex flex-col items-center justify-start text-center space-y-5 md:min-w-[200px]">
                             <Image
-                                src="/images/nit-logo.png"
+                                src="/nit-logo.svg"
                                 alt="NIT Logo"
                                 width={130}
                                 height={130}

@@ -5,20 +5,20 @@ import Slider from "./slider";
 export default function Hero() {
     return (
         <>
-            <div className="relative w-full min-h-[93dvh] llg:min-h-[120dvh] flex flex-col items-center justify-start overflow-hidden">
+            <div className="relative w-full min-h-[93dvh] llg:min-h-[120dvh] flex flex-col items-center justify-start overflow-hidden bg-[url('/images/bg.png')] bg-center ">
                 <div className="absolute inset-0 z-0">
-                    <Image
+                    {/* <Image
                         src="/images/bg.png"
                         alt="Background Texture"
                         fill
                         className="object-cover object-center opacity-40 sm:opacity-100"
                         priority
-                    />
+                    /> */}
                     {/* <div className="absolute inset-0 bg-gradient-to-b from-white/60 via-transparent to-transparent sm:from-white/30" /> */}
                 </div>
 
-                <div className="relative z-20 flex flex-col items-center w-full px-4 pt-[10vh] md:pt-[2vh] llg:pt-[10vh]">
-                    <div className="absolute inset-0 -z-10 bg-gradient-to-b from-[#f6eee3] via-[#f6eee3]/90 to-transparent h-[120%]" />
+                <div className="relative z-20 flex flex-col items-center w-full px-4 pt-[10vh] md:pt-[2vh] llg:pt-[6vh]">
+                    {/* <div className="absolute inset-0 -z-10 bg-gradient-to-b from-[#f6eee3] via-[#f6eee3]/90 to-transparent h-[120%]" /> */}
 
                     <div className="relative w-[60vw] sm:w-[40vw] lg:w-[25vw] mb-4 animate-fade-in-down">
                         <Image
