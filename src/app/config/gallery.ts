@@ -1,7 +1,6 @@
 export const galleryImages = [
-    "https://res.cloudinary.com/dxi7mifgc/image/upload/v1771152437/N6D3wf_2_djwyjs.svg",
-    "https://res.cloudinary.com/dxi7mifgc/image/upload/v1771152437/N6D3wf_2_djwyjs.svg",
-    "https://res.cloudinary.com/dxi7mifgc/image/upload/v1771152437/N6D3wf_2_djwyjs.svg",
-    "https://res.cloudinary.com/dxi7mifgc/image/upload/v1771152437/N6D3wf_2_djwyjs.svg",
-
+  "/images/team.webp",
+  "/images/image2.webp",
+  "/images/image3.webp",
+  "/images/image4.webp",
 ];
