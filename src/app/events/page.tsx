@@ -5,6 +5,7 @@ import Image from "next/image";
 import Navbar from "@/components/Navbar";
 import { Poppins } from "next/font/google";
 import Slider from "@/components/slider";
+import { events, workshops } from "@/app/config/events";
 
 const poppins = Poppins({
     subsets: ["latin"],
@@ -12,7 +13,8 @@ const poppins = Poppins({
 });
 
 export default function EventsPage() {
-    const events = [
+    // Using events from config file
+    const _localEvents = [
         {
   id: 1,
   title: 'SAHAYATRI',
@@ -42,7 +44,8 @@ export default function EventsPage() {
         },
     ];
 
-    const workshops = [
+    // Using workshops from config file
+    const _localWorkshops = [
         {
             id: 1,
             title: "STAAD Pro & Revit Workshop",
@@ -130,7 +133,14 @@ export default function EventsPage() {
                                 key={event.id}
                                 className="bg-gradient-to-br from-[#F5A86E] to-[#F08A3C] rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
                             >
-                                <div className="bg-[#FBD4A8] rounded-xl h-40 mb-4 border-2 border-[#E89654]"></div>
+                                <div className="relative rounded-xl h-40 mb-4 border-2 border-[#E89654] overflow-hidden bg-[#FBD4A8]">
+                                    <Image
+                                        src={event.image}
+                                        alt={event.title}
+                                        fill
+                                        className="object-cover"
+                                    />
+                                </div>
                                 <h3 className="text-2xl font-bold text-[#5A1A0F] mb-3 font-saman">
                                     {event.title}
                                 </h3>
@@ -182,7 +192,14 @@ export default function EventsPage() {
                                 key={workshop.id}
                                 className="bg-gradient-to-br from-[#F5A86E] to-[#F08A3C] rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
                             >
-                                <div className="bg-[#FBD4A8] rounded-xl h-40 mb-4 border-2 border-[#E89654]"></div>
+                                <div className="relative rounded-xl h-40 mb-4 border-2 border-[#E89654] overflow-hidden bg-[#FBD4A8]">
+                                    <Image
+                                        src={workshop.image}
+                                        alt={workshop.title}
+                                        fill
+                                        className="object-cover"
+                                    />
+                                </div>
                                 <h3 className="text-2xl font-bold text-[#5A1A0F] mb-3 font-saman">
                                     {workshop.title}
                                 </h3>
