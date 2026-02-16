@@ -1,17 +1,17 @@
 export const footerCards = [
   {
     id: 1,
-    title: "find us here",
+    title: "FIND US HERE",
     image: "/images/location.webp",
   },
   {
     id: 2,
-    title: "team smarak",
+    title: "TEAM SMARAK",
     image: "/images/team.webp",
   },
   {
     id: 3,
-    title: "nit rourkela",
+    title: "NIT Rourkela",
     image: "/images/nitr.webp",
   },
 ];

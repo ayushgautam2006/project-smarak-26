@@ -29,7 +29,7 @@ const Footer = () => {
                 className="object-cover"
                 priority
               />
-              <div className="absolute inset-0 bg-gradient-to-b from-[#b83a2f]/70 to-[#8b2a1f]/70" />
+              <div className="absolute inset-0 " />
             </div>
 
             {/* Title */}
