@@ -3,6 +3,7 @@
 import React, { useCallback, useEffect, useState } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
+import Image from "next/image";
 import { events } from "@/app/config/events";
 
 const SCALE_CENTER = 1.08;
@@ -88,12 +89,20 @@ export default function Events() {
                     }}
                   >
                     <div
-                      className="border bg-[#F6A440] rounded-xl"
+                      className="relative border bg-[#FBD4A8] rounded-xl overflow-hidden"
                       style={{
                         height: "clamp(12rem, 28vh, 18rem)",
                         marginBottom: "clamp(1rem, 2vh, 1.5rem)",
                       }}
-                    ></div>
+                    >
+                      <Image
+                        src={event.image}
+                        alt={event.title}
+                        fill
+                        sizes="(max-width: 640px) 85vw, (max-width: 768px) 50vw, 45vw"
+                        className="object-cover"
+                      />
+                    </div>
 
                     <h2
                       className="font-saman"
