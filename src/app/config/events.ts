@@ -34,13 +34,13 @@ export const events = [
             "Shilp Setu is a hands-on team-based competition where participants will design and construct a stable, load-bearing arch bridge using materials like sand, bricks, and water. This challenge tests structural engineering skills, creativity, and material efficiency. Bridges will be evaluated based on strength, load-bearing capacity, and overall design aesthetics. The competition encourages innovation in construction techniques while providing practical exposure to architectural and civil engineering principles.",
         image: "/images/shlipshetu.webp",
     },
-    {
-        id: 6,
-        title: "Vastukala",
-        description:
-            "Vastukala is an architectural design competition that challenges participants to showcase their creativity and technical expertise. Teams will work on innovative building designs that balance aesthetic appeal with structural functionality. This event encourages the exploration of sustainable architecture and modern construction techniques.",
-        image: "/images/vastukala.webp",
-    },
+    // {
+    //     id: 6,
+    //     title: "Vastukala",
+    //     description:
+    //         "Vastukala is an architectural design competition that challenges participants to showcase their creativity and technical expertise. Teams will work on innovative building designs that balance aesthetic appeal with structural functionality. This event encourages the exploration of sustainable architecture and modern construction techniques.",
+    //     image: "/images/vastukala.webp",
+    // },
 ];
 
 export const workshops = [
